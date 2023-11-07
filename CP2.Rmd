@@ -1,0 +1,45 @@
+---
+title: "Assignment 8: CP2"
+author: "Sangwon Yum"
+date: "`r Sys.Date()`"
+documentclass: article
+geometry: margin=1in
+fontsize: 11pt
+output:
+  pdf_document:
+    highlight: tango
+    toc: false
+    df_print: kable
+    fig_caption: no
+    number_sections: no
+    dev: pdf
+    latex_engine: xelatex
+mainfont: "Malgun Gothic"
+---
+
+```{r setup, include = FALSE}
+# Set knitr options
+knitr::opts_chunk$set(
+  echo = TRUE, eval = TRUE, fig.width = 6, warning = FALSE,
+  message = FALSE, fig.asp = 0.618, out.width = "80%", dpi = 120,
+  fig.align = "center", cache = FALSE
+)
+
+# Load required packages
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(broom))
+suppressPackageStartupMessages(library(modelr))
+suppressPackageStartupMessages(library(plotly))
+
+# Load dataset
+car_prices <- read_rds("car_price_data.rds")
+```
+
+## Exercise 1
+```{r, warning=FALSE}
+a = 20
+a
+
+b = 30
+b
+```
